@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trend Sphere</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body{
+      font-family: Georgia, serif;
+      background: #ffffff;
+      color: #000;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    .card-hover:hover{
+      transform: translateY(-6px);
+      transition: 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+  <!-- NAVBAR -->
+  <header class="border-b bg-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+      <div>
+        <h1 class="text-4xl font-bold">Trend<span class="text-gray-700">Sphere</span></h1>
+        <p class="text-sm text-gray-500">Read Trending. Stay Informed.</p>
+      </div>
+
+      <nav class="hidden md:flex gap-10 font-medium text-lg">
+        <a href="#home" class="hover:text-gray-500">Home</a>
+        <a href="#about" class="hover:text-gray-500">About Us</a>
+        <a href="#privacy" class="hover:text-gray-500">Privacy Policy</a>
+        <a href="#terms" class="hover:text-gray-500">Terms</a>
+        <a href="#contact" class="hover:text-gray-500">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- LEFT -->
+      <div>
+
+        <h2 class="text-6xl font-bold leading-tight mb-8">
+          Read. Discover.<br>
+          Stay Ahead.
+        </h2>
+
+        <p class="text-xl text-gray-700 leading-relaxed mb-10">
+          Your classic destination for reading high-quality articles on
+          technology, business, lifestyle, science, and trending topics
+          from around the world.
+        </p>
+
+        <button class="bg-black text-white px-8 py-4 rounded-lg text-lg hover:bg-gray-800 transition">
+          Explore Articles
+        </button>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop"
+          alt="Reading"
+          class="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRENDING ARTICLES -->
+  <section class="py-20 border-t">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-5xl font-bold mb-14">
+        Trending Articles
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- CARD 1 -->
+        <div class="border rounded-3xl overflow-hidden shadow-sm card-hover">
+
+          <img
+            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop"
+            class="h-64 w-full object-cover"
+          />
+
+          <div class="p-8">
+
+            <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">
+              Technology
+            </span>
+
+            <h3 class="text-3xl font-bold mt-5 mb-4">
+              Top Technology Trends in 2026
+            </h3>
+
+            <p class="text-gray-700 leading-relaxed">
+              Discover innovations shaping AI, gadgets, robotics,
+              and the digital future.
+            </p>
+
+            <p class="text-sm text-gray-500 mt-6">
+              May 20, 2026 • 5 min read
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="border rounded-3xl overflow-hidden shadow-sm card-hover">
+
+          <img
+            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop"
+            class="h-64 w-full object-cover"
+          />
+
+          <div class="p-8">
+
+            <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">
+              Lifestyle
+            </span>
+
+            <h3 class="text-3xl font-bold mt-5 mb-4">
+              Healthy Habits for Better Living
+            </h3>
+
+            <p class="text-gray-700 leading-relaxed">
+              Learn simple routines that improve wellness,
+              productivity, and focus.
+            </p>
+
+            <p class="text-sm text-gray-500 mt-6">
+              May 18, 2026 • 6 min read
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="border rounded-3xl overflow-hidden shadow-sm card-hover">
+
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop"
+            class="h-64 w-full object-cover"
+          />
+
+          <div class="p-8">
+
+            <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">
+              Business
+            </span>
+
+            <h3 class="text-3xl font-bold mt-5 mb-4">
+              Modern Business Growth Strategies
+            </h3>
+
+            <p class="text-gray-700 leading-relaxed">
+              Explore smart digital strategies and business ideas
+              for modern entrepreneurs.
+            </p>
+
+            <p class="text-sm text-gray-500 mt-6">
+              May 17, 2026 • 7 min read
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 bg-gray-50 border-t">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h2 class="text-5xl font-bold mb-8">
+        About Us
+      </h2>
+
+      <p class="text-xl text-gray-700 leading-loose">
+        Trend Sphere is a modern article reading platform created for people
+        who enjoy reading trending topics from around the world. We provide
+        simple, clean, informative, and engaging content for everyone.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section id="privacy" class="py-20 border-t">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <h2 class="text-5xl font-bold mb-10">
+        Privacy Policy
+      </h2>
+
+      <div class="space-y-6 text-lg text-gray-700 leading-loose">
+
+        <p>
+          We respect your privacy and are committed to protecting your personal data.
+        </p>
+
+        <p>
+          We do not sell, trade, or share your information with third parties
+          without consent.
+        </p>
+
+        <p>
+          Cookies and analytics may be used to improve website functionality
+          and user experience.
+        </p>
+
+        <p>
+          By using this website, you agree to our privacy practices and policies.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TERMS -->
+  <section id="terms" class="py-20 bg-gray-50 border-t">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <h2 class="text-5xl font-bold mb-10">
+        Terms & Conditions
+      </h2>
+
+      <div class="space-y-6 text-lg text-gray-700 leading-loose">
+
+        <p>
+          All content on Trend Sphere is for informational and educational purposes only.
+        </p>
+
+        <p>
+          Users may not copy or redistribute website content without permission.
+        </p>
+
+        <p>
+          We reserve the right to modify or remove content without notice.
+        </p>
+
+        <p>
+          By using this website, you agree to comply with these terms and
+          applicable laws.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 border-t">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <h2 class="text-5xl font-bold mb-8">
+        Contact Us
+      </h2>
+
+      <p class="text-xl text-gray-700 mb-8">
+        Have questions or suggestions? Reach out anytime.
+      </p>
+
+      <div class="inline-block border px-10 py-5 rounded-2xl text-xl font-medium shadow-sm">
+        samsg4211@gmail.com
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white py-14 mt-10">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <h3 class="text-4xl font-bold mb-4">
+        Trend Sphere
+      </h3>
+
+      <p class="text-gray-400 text-lg mb-5">
+        Read trending topics with a clean and classic experience.
+      </p>
+
+      <p class="text-gray-500">
+        © 2026 Trend Sphere. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
